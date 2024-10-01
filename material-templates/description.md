@@ -1,19 +1,19 @@
 # Hackathon project
 
 ## Title 
-uniform metrics pipeline for ssh model
+Uniform metrics pipeline for ocean forecasting/mapping model.
 
 ## Short description of the project 
-standardizing metrics computation of forecast and reconstruction of ssh fields in an automatic way
+Designing an EDITO process for the metrics computation of ocean forecasting/mapping models.
 
 ## Expected benefit of the project
-simplifying the process of computing multiple metrics for ocean forecasting models, and have a fair comparison between models
+Simplifying the process of computing multiple metrics for ocean forecasting models, and having a fair comparison between models.
 
 ## Datasets
-could come from multiple sources
+Could come from multiple sources
 
 ## Codebase
-to be defined
+To be defined
 
 ## Compute resources 
 CPU/GPU
