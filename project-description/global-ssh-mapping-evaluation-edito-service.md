@@ -11,8 +11,6 @@ Remove the need to install evualation dependencies, download data, outsource the
 - Altimetric traces: https://doi.org/10.48670/moi-00146
 - Drifters
 
-- 
-
 ## Codebase
 `Link`
 
