@@ -1,22 +1,27 @@
-# Template for describing the hackathon projects 
+# Hackathon project
 
 ## Title 
-A short acronym for your project
+uniform metrics pipeline for ssh model
 
 ## Short description of the project 
-2-3 lines describing the ambition of the project. 
+standardizing metrics computation of forecast and reconstruction of ssh fields in an automatic way
 
 ## Expected benefit of the project
-2-3 lines explaining why you are interested in running your project on the EDITO platform
+simplifying the process of computing multiple metrics for ocean forecasting models, and have a fair comparison between models
 
 ## Datasets
-Description of the datasets that will be used, whether they already sit on the EDITO storage or not
+could come from multiple sources
 
 ## Codebase
-Description of the software packages that will be used (with links to github repos)
+to be defined
 
 ## Compute resources 
-Rough estimate of the largest resources you may need 
+CPU/GPU
 
 ## People involved 
-List of people involved 
+Hugo Georgenthum
+Anass El Aouni
+Eugenio Cutolo
+François Courteille
+Anne Durif
+Pierre Haslée
