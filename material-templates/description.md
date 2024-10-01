@@ -1,27 +1,22 @@
-# Hackathon project
+# Template for describing the hackathon projects 
 
 ## Title 
-Uniform metrics pipeline for ocean forecasting/mapping model.
+A short acronym for your project
 
 ## Short description of the project 
-Designing an EDITO process for the metrics computation of ocean forecasting/mapping models.
+2-3 lines describing the ambition of the project. 
 
 ## Expected benefit of the project
-Simplifying the process of computing multiple metrics for ocean forecasting models, and having a fair comparison between models.
+2-3 lines explaining why you are interested in running your project on the EDITO platform
 
 ## Datasets
-Could come from multiple sources
+Description of the datasets that will be used, whether they already sit on the EDITO storage or not
 
 ## Codebase
-To be defined
+Description of the software packages that will be used (with links to github repos)
 
 ## Compute resources 
-CPU/GPU
+Rough estimate of the largest resources you may need 
 
 ## People involved 
-Hugo Georgenthum
-Anass El Aouni
-Eugenio Cutolo
-François Courteille
-Anne Durif
-Pierre Haslée
+List of people involved 
