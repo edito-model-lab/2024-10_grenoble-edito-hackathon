@@ -7,9 +7,11 @@ Facilitate mapping evaluation by allowing an easy upload of global SSH fields an
 Remove the need to install evualation dependencies, download data, outsource the evualation task from the mapping team
 
 ## Datasets
-- Global from 4DVarNet, 1 map per day, collection of .NetCDF files
-- Altimetric traces
+- Global from 4DVarNet, 1 map per day, collection of .NetCDF file: https://doi.org/10.17882/86236
+- Altimetric traces: https://doi.org/10.48670/moi-00146
 - Drifters
+
+- 
 
 ## Codebase
 `Link`
