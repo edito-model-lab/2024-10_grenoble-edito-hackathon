@@ -16,4 +16,4 @@ Widetrax package (https://github.com/meom-group/widetrax.)
 Storage: Approximately 5 to 7 GB of storage for the SWOT L3 data. A few CPUs
 
 ## 👥 **People:**
-Amine ouhechou
+Amine ouhechou, Nabiz Rahpoe
