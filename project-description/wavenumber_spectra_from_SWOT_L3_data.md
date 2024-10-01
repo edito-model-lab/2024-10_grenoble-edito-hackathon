@@ -8,7 +8,7 @@ Use of Widetrax package to compute the wavenumber spectra from SWOT L3 SSH data.
 ## 🌟 **Expected Benefit of the Project:**
 Provide an open-source pipeline and streamline the processing and calculation of wavenumber spectra from SWOT data, ensuring they are robust and accessible for the scientific community.
 
-## 🌟 **Expected diffuclties:**
+## ⚠️ **Expected diffuclties:**
 A possible challenge is testing whether the widetrax package can work with remote datasets, (ex : data from AVISO). Since the package is mainly used with local data, there may be issues with accessing or processing external remote data
 
 ## 📊 **Datasets:**
