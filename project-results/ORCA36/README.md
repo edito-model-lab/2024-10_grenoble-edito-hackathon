@@ -15,3 +15,11 @@
 and save them in netcdf files
 - [ ] make nice comparison plots !
 - [ ] Define regions
+ - [ ] Gulf Stream :
+
+```
+min_lonGS = 20
+min_latGS = 25.05
+max_lonGS = -55
+max_latGS = 45
+```
