@@ -23,3 +23,8 @@ min_latGS = 25
 max_lonGS = -50
 max_latGS = 43
 ```
+
+```
+domain=[[20,40,-140,-105],[25,43,-82,-50],[25,45,130,160],[-50,-30,15,50]] # [Lat0,Lat1,Lon0,Lon1]
+region=("California Current","Gulf Stream","Kuroshio Current","Agulhas Current")
+```
