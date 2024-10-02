@@ -23,3 +23,10 @@ min_latGS = 25.05
 max_lonGS = -55
 max_latGS = 45
 ```
+
+```
+min_lonAG =  15
+min_latAG = -50
+max_lonAG =  45
+max_latAG = -30
+```
