@@ -15,10 +15,12 @@ Remove the need to install evualation dependencies, download data, outsource the
 `Link`
 
 ## Compute resources 
-Few ?
+Few
 
 ## People involved 
 - Sammy Metref
 - Quentin Febvre
 - Daniel Zhu
 - Mykael Vigo
+- Hugo Georgenthum
+- Hao Du
