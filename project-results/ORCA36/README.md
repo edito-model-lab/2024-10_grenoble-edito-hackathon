@@ -18,8 +18,8 @@ and save them in netcdf files
   - [ ] Gulf Stream :
 
 ```
-min_lonGS = 20
-min_latGS = 25.05
-max_lonGS = -55
-max_latGS = 45
+min_lonGS = -82
+min_latGS = 25
+max_lonGS = -50
+max_latGS = 43
 ```
