@@ -15,7 +15,7 @@
 and save them in netcdf files
 - [ ] make nice comparison plots !
 - [ ] Define regions
- - [ ] Gulf Stream :
+  - [ ] Gulf Stream :
 
 ```
 min_lonGS = 20
