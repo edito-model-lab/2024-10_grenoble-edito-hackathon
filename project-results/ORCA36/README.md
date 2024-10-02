@@ -13,4 +13,5 @@
    - [ ] EKE from SSU SSV from ORCA36
    - [ ] EKE from SSU SSV from GLOBCURRENT
 and save them in netcdf files
-- [ ] make nice comparison plots !  
+- [ ] make nice comparison plots !
+- [ ] Define regions
