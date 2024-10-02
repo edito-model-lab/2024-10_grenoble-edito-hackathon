@@ -20,7 +20,7 @@ def map_mean_GS_obs(data,lon,lat,domain,title,unit,vmin,vmax,cmap,name):
     ax = fig.add_subplot(111,projection=ccrs.PlateCarree())
     
     pcolor=ax.pcolormesh(lon,lat,data,cmap=cmap,vmin=vmin,vmax=vmax,transform=ccrs.PlateCarree())
-    ax.set_extent([min_lonGS, max_lonGS, min_latGS, max_latGS-2])
+    ax.set_extent([min_lonGS, max_lonGS, min_latGS+2, max_latGS-2])
     
     ax.add_feature(cfeature.LAND,facecolor='grey')
     ax.coastlines()
