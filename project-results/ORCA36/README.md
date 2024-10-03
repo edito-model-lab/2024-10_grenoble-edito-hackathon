@@ -14,7 +14,17 @@ xarray, zarr, cartopy, matplotlib, numpy, copernicus_marine_client, cdsapi, cmoc
 4 Gi - 18 Gi
 
 ## Results
-Figures are in plots directory and notebook in notebooks directory
+
+The comparison between ORCA36 and OSTIA can be seen below, first the mean :
+
+![plot](MEAN-SST-ORCA36-OSTIA-ALL-REGS.png)
+
+and the standart deviation : 
+
+![plot](STD-SST-ORCA36-OSTIA-ALL-REGS.png)
+
+All individual figures are in plots directory and the notebooks used to generate them are in notebooks directory
+
 ## People involved
 Aurélie Albert & Marcela Contreras
 
