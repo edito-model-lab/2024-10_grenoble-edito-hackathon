@@ -1,0 +1,3 @@
+Running {{ .Chart.Name }} process...
+
+The output will be available in "My Files", in the directory {{ .Release.Name }}.

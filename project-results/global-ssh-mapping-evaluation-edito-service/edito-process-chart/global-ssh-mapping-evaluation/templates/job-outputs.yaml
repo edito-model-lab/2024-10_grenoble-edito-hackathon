@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-job-outputs
+  labels:
+    {{- include "library-chart.labels" . | nindent 4 }}
+    job-results-outputs: "true"
+    job-name: {{ .Release.Name }}
+data:
+  jobResults: |
+    {
+        "output_location" : "s3://{{ .Release.Namespace | replace "user-" "oidc-" }}/{{ .Release.Name }}/output.zarr",
+        "endpoint_url_location" : "{{ .Values.s3.endpoint }}"
+    }

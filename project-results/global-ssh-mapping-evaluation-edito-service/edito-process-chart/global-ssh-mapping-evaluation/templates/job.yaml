@@ -1,0 +1,74 @@
+{{- $fullName := include "library-chart.fullname" . -}}
+
+apiVersion: batch/v1
+kind: Job
+
+metadata:
+  name: {{ .Release.Name }}
+spec:
+  template:
+    spec:
+      initContainers:
+      - name: init-service
+        image: busybox:1.28
+        command: ['sh', '-c', "chown -R 1000:1000 /output-data"]
+        volumeMounts:
+        - mountPath: /output-data
+          name: temp-volume
+        resources:
+            limits:
+              cpu: 50m
+              memory: 50Mi
+      - name: {{ .Release.Name }}-main-container
+        image: quentinf00/2023-dc-env:v0
+        env:
+        - name: CUSTOM_VALUE
+          value: "{{ .Values.editableCustomValue.customValue }}"
+        - name: EDITO_INFRA_OUTPUT
+          value: "/output-data"
+        command: []
+        volumeMounts:
+        - mountPath: /output-data
+          name: temp-volume
+        resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      containers:
+      - name: copy-output
+        image: amazon/aws-cli
+        env:
+        - name: AWS_ACCESS_KEY_ID
+          valueFrom:
+            secretKeyRef:
+              name: {{ .Release.Name }}-secrets3
+              key: AWS_ACCESS_KEY_ID
+        - name: AWS_SECRET_ACCESS_KEY
+          valueFrom:
+            secretKeyRef:
+              name: {{ .Release.Name }}-secrets3
+              key: AWS_SECRET_ACCESS_KEY
+        - name: AWS_SESSION_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: {{ .Release.Name }}-secrets3
+              key: AWS_SESSION_TOKEN
+        - name: AWS_S3_ENDPOINT
+          valueFrom:
+            secretKeyRef:
+              name: {{ .Release.Name }}-secrets3
+              key: AWS_S3_ENDPOINT
+        - name: AWS_DEFAULT_REGION
+          valueFrom:
+            secretKeyRef:
+              name: {{ .Release.Name }}-secrets3
+              key: AWS_DEFAULT_REGION
+        command: ["aws", "s3", "cp", "/output-data", "--endpoint-url", "https://$(AWS_S3_ENDPOINT)", "s3://{{ .Release.Namespace | replace "user-" "oidc-" }}/{{ .Release.Name }}", "--recursive"]
+        volumeMounts:
+        - mountPath: /output-data
+          name: temp-volume
+        resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      restartPolicy: Never
+      volumes:
+      - emptyDir: {}
+        name: temp-volume
+  backoffLimit: 4
