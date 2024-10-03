@@ -1,6 +1,6 @@
 # ORCA36 validation project
 ## Introduction
-The goal is to compare the sea surface temperature (SST) between ORCA36 simulation  (0.03° horizontal resolution and hourly output) and OSTIA satellite data (0.05° resolution and daily output). Due to the ORCA36 dimension, we focus on  key regions: Gulf Stream, Agulhas Current, Kuroshio Current, and California Current. We computed the daily means of hourly ORCA36 outputs and then we estimated the mean and standard deviation during the winter months of 2018 (winter being Jnauary to MArch for Northern regions and July to September for Southern Hemisphere). 
+The goal is to compare the sea surface temperature (SST) between ORCA36 simulation  (0.03° horizontal resolution and hourly output) and OSTIA satellite data (0.05° resolution and daily output). Due to the ORCA36 dimension, we focus on  key regions: Gulf Stream, Agulhas Current, Kuroshio Current, and California Current. We computed the daily means of hourly ORCA36 outputs and then we estimated the mean and standard deviation during the winter months of 2018 (winter being January to March for Northern regions and July to September for Southern Hemisphere). 
 
 ## Dataset
 ORCA36 simulation provided by Clément Bricaud (MOI) and accessible through the direct s3 adress.
