@@ -46,3 +46,13 @@ The first trigger would be a pull request by the user containing a config file w
 From there, several GitHub actions will launch the GMDC-Edito service in the background which will end by a github push of the three new (appropriately named) notebooks onto the Global Mapping Data Challenge repository. 
 
 In a nutshell, the data challenge participant will make a pull request for its maps and several minutes later will see the performances of its method appear online. 
+
+
+## First results,
+In order to have a first notebook generated with the service, we ran a smaller service with only alongtrack comparison on a coarsen 4dvarnet map
+the service ran is with the service
+
+https://datalab.dive.edito.eu/launcher/ide/jupyter-pytorch?name=global-eval-w-env&version=2.1.4&autoLaunch=true&service.image.custom.enabled=true&service.image.custom.version=«quentinf00%2F2023-dc-env%3Av0»&resources.limits.cpu=«1900m»&resources.limits.memory=«16Gi»&persistence.size=«35Gi»&init.personalInit=«https%3A%2F%2Fminio.lab.dive.edito.eu%2Foidc-quentinfebvre%2Finit_script_alti_only.sh»&init.personalInitArgs=«4dvarnet_coarse%20https%3A%2F%2Fminio.lab.dive.edito.eu%2Foidc-dzhu%2Fmappings-4dvarnet%2F4dvarnet_coarse.nc» 
+
+and the generated notebook is ssh_scores_4dvarnet_coarse_edito.ipynb
+
