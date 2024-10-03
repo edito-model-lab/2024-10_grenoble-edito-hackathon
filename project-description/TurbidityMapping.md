@@ -6,8 +6,6 @@
 Create a pipeline for performing turbidity mapping using a pre-trained 4dvarnet model
 over Wadden Sea region which contains Dutch Wadden Sea and German Wadden Sea.
 
-Integrate Inference for pretrained 4DVarNet-based 
-
 ## Expected benefit of the project
 Create a service for turbidity Mapping and analysing evaluation metrics and visualiations. 
 This inference allows us to benchmark the model agaist a classical method called Dineof
