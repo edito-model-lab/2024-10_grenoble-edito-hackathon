@@ -10,7 +10,7 @@ OSTIA SST product is available on the EDITO platform.
 xarray, zarr, cartopy, matplotlib, numpy, copernicus_marine_client, cdsapi, cmocean
 
 ## Compute resources
-1 - 4 CPU
+1 - 4 CPU; 
 4 Gi - 18 Gi
 
 ## Results
